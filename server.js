@@ -6,16 +6,44 @@ const cors = require('cors');
 app.use(cors());
 require('dotenv').config();
 const PORT = process.env.PORT;
-let weatherData = require('./weather.json');
+const weatherData = require('./data/weather.json');
 
 
-app.get('/weather', (request, response) => {
-  let weather = request.query;
-  response.send(weatherData);
-});
+class ForeCast {
+  constructor (description, date) {
+    this.description = description;
+    this.date = date;
+
+  }
+}
 
 
-app.get('/*', (request, response) => {
+app.get('/weather', getWeather);
+function getWeather(request, response) {
+  console.log('weather hit');
+  let cityNameRequested = request.query.searchQuery;
+  let latRequested = (request.query.lat);
+  let lonRequested = (request.query.lon);
+  console.log(latRequested, lonRequested, cityNameRequested);
+
+  let cityFound = weatherData.find(
+    obj => obj.city_name.toLowerCase() === cityNameRequested.toLowerCase());
+
+
+  let forecastArray = [];
+
+  if (cityFound) {
+    cityFound.data.forEach(obj => forecastArray.push(new ForeCast(
+      `low of ${obj.low_temp}, high of ${obj.high_temp} with ${obj.weather.description}`
+      , obj.datetime)));
+    response.send(forecastArray);
+  } else {
+    response.status(404).send('There is no weather data for the requested city');
+  }
+
+}
+
+app.get('*', (request, response) => {
   response.status(500).send('something went wrong');
 
 });

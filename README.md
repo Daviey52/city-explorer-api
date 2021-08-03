@@ -2,33 +2,37 @@
 
  Project Name
 
-**Author**: Your Name Goes Here
+**Author**: David Waiganjo
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
+
+This app servers as a server that has weather data,which it sends whenever requested by te frontend.Importantly it only sends requested data;
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+
+Designing this server entails having the needed files in this case weather.json data and also the required javascript environment and tools including Node JS express ,dotenv , axios and reactbootstrap.
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+
+This app was designed using React Library,react-bootstrap, css, javascript and html.LocationIQ API is also used.
 
 ## Change Log
 
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+08/03/2021 02:00 - The application can now serve as a server that send's requested weather data back to the front end
 
 ## Credit and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+
+Collaborations: Alex Payne and Brutaism - UML diagram(Lab07)  
 
 ### Name of feature
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 6hrs
 
-Start time: _____
+Start time: 07:00
 
-Finish time: _____
+Finish time:14:00
 
-Actual time needed to complete: _____
+Actual time needed to complete: 08:00
+
+![UML pic](./src/Lab07%20-%20UML.png)
