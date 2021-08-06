@@ -74,7 +74,7 @@ app.get('/movie', async (request, response) => {
 });
 
 
-app.get('*', (request, response) => {
+app.get('/*', (request, response) => {
   response.status(500).send('something went wrong');
 
 });
