@@ -30,7 +30,7 @@ Collaboration: Quentin Young - UML diagram(Lab07)
 
 ### Name of feature
 
-Estimate of time needed to complete: 6hrs
+Estimate of time needed to complete: 5hrs
 
 Start time: 07:00
 
@@ -38,6 +38,8 @@ Finish time:14:00
 
 Actual time needed to complete: 08:00
 
-![UML pic](./src/Lab07%20-%20UML.png)
+![UML pic](./Lab07%20-%20UML.png)
+![UML pic](./Lab08%20-%20UML.png)
+![UML pic](./Lab09%20-%20UML.png)
 
-![UML pic](./src/Lab08%20-%20UML.png)
+## Heroku deployeds site :<https://dashboard.heroku.com/apps/city-explorer-server1/deploy/github>
