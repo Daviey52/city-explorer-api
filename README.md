@@ -21,25 +21,24 @@ This app was designed using React Library,react-bootstrap, css, javascript and h
 
 08/03/2021 02:00 - The application can now serve as a server that send's requested weather data back to the front end
 08/04/2021 20:57 - The application can now serve as a server for movies which can be searched according to the city name entered
+08/11/2021 - The application now has a cache which can temporarly store data,meaning it does not have to call on an API everytime, if this data is available.
 
 ## Credit and Collaborations
 
-Collaborations: Alex Payne and Brutaism - UML diagram(Lab07)
-
-Collaboration: Quentin Young - UML diagram(Lab07)
+Collaboration: Clarissa Pamonicutt - UML diagram
 
 ### Name of feature
 
-Estimate of time needed to complete: 5hrs
+Estimate of time needed to complete: 4hrs
 
 Start time: 07:00
 
-Finish time:14:00
+Finish time: 10:30
 
-Actual time needed to complete: 08:00
+Actual time needed to complete: 3 hrs
 
-![UML pic](./Lab07%20-%20UML.png)
-![UML pic](./Lab08%20-%20UML.png)
-![UML pic](./Lab09%20-%20UML.png)
+![UML pic](./Lab10%20-%20UML.png)
 
-## Heroku deployeds site :<https://dashboard.heroku.com/apps/city-explorer-server1/deploy/github>
+## Heroku deployeds site :<https://city-explorer-server1.herokuapp.com/>
+
+## Netlify :<https://focused-heyrovsky-cd1f5e.netlify.app/>
